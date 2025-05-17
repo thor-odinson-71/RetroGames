@@ -5,7 +5,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['*'], // Oder z. B. ['http://localhost:5500'] für Live-Server
+      origin: ['http://localhost:5500', 'http://localhost:3000', 'http://localhost'], // alle lokalen Varianten
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
     },
