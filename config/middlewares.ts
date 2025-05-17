@@ -1,15 +1,8 @@
-export default [
+module.exports = [
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
-  // {
-  //   name: 'strapi::cors',
-  //   config: {
-  //     origin: ['http://localhost:5500', 'http://localhost:3000', 'http://localhost'], // alle lokalen Varianten
-  //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  //     headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-  //   },
-  // },
+  'strapi::cors', // Standard wiederherstellen
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
