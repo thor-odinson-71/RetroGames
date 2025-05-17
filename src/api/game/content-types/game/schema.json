@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "Game"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "webGlUrl": {
+      "type": "string"
+    },
+    "downloadUrl": {
+      "type": "string"
+    },
+    "coverImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "premiumOnly": {
+      "type": "boolean"
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "Arcade",
+        "Puzzle",
+        "Action"
+      ]
+    }
+  }
+}
